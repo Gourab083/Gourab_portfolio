@@ -89,7 +89,6 @@ body.dark-mode nav a {
   color: #fff;
 }
 
-/* Profile Picture Styles */
 .profile-pic {
   width: 150px;
   height: 150px;
@@ -103,13 +102,12 @@ body.dark-mode nav a {
   opacity: 0;
 }
 
-/* Hover zoom effect */
+
 .profile-pic:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Glowing border animation */
 @keyframes pulseBorder {
   0% {
     box-shadow: 0 0 0px rgba(0, 123, 255, 0.4);
@@ -122,17 +120,45 @@ body.dark-mode nav a {
   }
 }
 
-/* Fade-in effect */
+
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
 
-/* Responsive for mobile */
+
 @media (max-width: 600px) {
   .profile-pic {
     width: 100px;
     height: 100px;
   }
+}
+.contact-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  margin-left: 41%;
+
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.contact-btn:hover {
+  background: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.cnt{
+  display: inline-block;
 }
